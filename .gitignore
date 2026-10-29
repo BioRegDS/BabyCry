@@ -1,17 +1,47 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.py.bak
+.pytest_cache/
 
-# Data
+# Environments
+.env
+.env.*
+venv/
+.venv/
+conda-env/
+
+# Raw and processed research data
 data/raw/
-data/large/
+data/processed/
+data/interim/
+data/external/
+data/sample/
+results/
+checkpoints/
+models/
+embeddings/
 
-# Jupyter
+# Audio and video
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.mp4
+*.avi
+
+# Potentially sensitive metadata
+*metadata*.csv
+*manifest*.csv
+
+# Temporary files
+*.log
+*.tmp
 .ipynb_checkpoints/
-
-# OS
 .DS_Store
 
-# Environment
-.env
-venv/*~
+# Editor backups
+*~
+*.swp
+*.swo
+*.orig
